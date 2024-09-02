@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amalgam_logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.topic-section {
+    background-image: url('/images/conference.png'); 
+    /* Placeholder for the background image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    /* text-align: center; */
+    color: #ffffff;
+}
+
+.topic-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.topic-container {
+    display: flex;
+    gap: 20px;
+}
+
+.topic-container > h1:last-child {
+    margin-left: auto;
+    font-size: 50px;
+}
+
+.resource-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.resource-card {
+    background-color: #ffffff;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.resource-card img {
+    width: 100%;
+    height: auto;
+}
+
+.resource-content {
+    padding: 20px;
+}
+
+.resource-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.resource-content p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.resource-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.un-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.un-container img {
+    width: 100px;
+}
+
+#un-text1 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000000;
+    border-right: 5px solid #87BFD0;
+    padding-right: 10px;
+}
+
+#un-text2 {
+    font-size: 0.8rem;
+    color: #4494AD;
+}
