@@ -1,0 +1,47 @@
+html *
+{
+    font-family: Inter !important;
+}
+
+nav{
+    padding:1px;
+    margin:0;
+}
+nav ul{
+    list-style-type: none;
+    margin: 1px;
+    padding: 0;
+    position:sticky;
+}
+
+nav ul li{
+    display: inline;
+    color: black;
+}
+
+nav ul li img{
+    height: auto;
+    width: 70%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+nav ul li a:visited{
+    color:black;
+}
+
+nav ul li#subscribe_button{
+    float:right;
+}
+
+nav ul li#logo{
+    float:left;
+}
+
+nav ul li.nav_item{
+    padding-left: 1%;
+}
