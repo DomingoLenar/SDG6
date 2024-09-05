@@ -28,11 +28,13 @@ nav div.nav-items{
 nav div.nav-items a{
     text-decoration: none;
     padding: 14px;
+    color:black;
 }
 
 nav div.nav-items a:hover{
     background-color: #77d1e566;
     border-radius: 10px;
+    color:black;
    
 }
 
