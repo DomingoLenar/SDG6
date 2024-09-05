@@ -12,28 +12,37 @@ nav{
     justify-content: space-between;
 }
 
-nav a{
-    text-decoration: none;
-    padding: 14px;
-    
-}
 
 nav img{
     width: 10%;
     height:auto;
+    margin-left: 5px;
 }
 
-nav div#nav-items{
+nav div.nav-items{
     margin:0;
     padding:0;
     display:flex;
 }
 
+nav div.nav-items a{
+    text-decoration: none;
+    padding: 14px;
+}
 
-nav a:visited{
+nav div.nav-items a:hover{
+    background-color: #77d1e566;
+    border-radius: 10px;
+   
+}
+
+nav div.nav-items a:visited{
     color:black;
 }
 
+#subscribe {
+    padding:14px;
+}
 
 #subscribe button{
     border: 0;
@@ -41,6 +50,7 @@ nav a:visited{
     padding: 10px;
     background-color: #4495ad;
     color:white;
+    font-weight:bold;
 }
 
 #subscribe button:hover{
