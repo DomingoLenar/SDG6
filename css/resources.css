@@ -37,69 +37,98 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: bold;
 }
 
 .topic-section {
     background-image: url('/images/conference.png'); 
     /* Placeholder for the background image */
-    background-size: cover;
     background-position: center;
-    padding: 60px 20px;
     /* text-align: center; */
     color: #ffffff;
+    height: 600px;
 }
 
-.topic-container h1 {
+.topic-card h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.topic-container {
+
+.topic-card {
     display: flex;
     gap: 20px;
 }
 
-.topic-container > h1:last-child {
+.topic-card > h1:last-child {
     margin-left: auto;
-    font-size: 50px;
+    font-size: 100px;
+    padding: 0 50px;
 }
 
 .resource-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 40px 20px;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .resource-card {
-    background-color: #ffffff;
-    width: 300px;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
+    display: flex;
+}
+
+.resource-card#sdg-book-club {
+    background-color: #FFFFFF;
+    ;
+}
+
+.resource-card#sdg-teachers-guide {
+    background-color:#87BFD0;
+}
+
+.resource-card#sdg-act-now {
+    background-color: #4494AD;
 }
 
 .resource-card img {
-    width: 100%;
-    height: auto;
+    width: 25%;
+    height: 25%;
+    padding: 20px;
+    margin: 20px 50px;
 }
 
 .resource-content {
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* Todo: import font-family: Inter; */
 }
 
 .resource-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #000000;
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
 }
 
 .resource-content p {
     font-size: 0.9rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 0 100px;
+    color: #000000;
 }
 
 .resource-content a {
@@ -119,7 +148,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
     gap: 10px;
 }
 
@@ -138,4 +167,24 @@ footer {
 #un-text2 {
     font-size: 0.8rem;
     color: #4494AD;
+}
+
+hr {
+    border: none;
+    color: #285663;
+    height: 10px;
+    background-color: #285663;
+    width: 80%;
+    box-shadow: 4px 4px 4px #00000080;
+}
+
+.topic-content {
+    display: flex;
+    gap: 10px;
+    padding: 50px 20px;
+}
+
+.topic-content img{
+    width: 10%;
+    height: auto;
 }
