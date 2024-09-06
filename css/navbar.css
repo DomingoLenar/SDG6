@@ -58,3 +58,23 @@ nav div.nav-items a:visited{
 #subscribe button:hover{
     background-color: #87bfd0;
 }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        display: none !important;
+    }
+
+    #hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #hamburger-menu.active .nav-items {
+        display: block;
+    }
+}
