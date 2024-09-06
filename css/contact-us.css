@@ -51,6 +51,11 @@ nav div.nav-items a:visited {
     color: black;
 }
 
+.current-page {
+    background-color: #77d1e566;
+    border-radius: 10px;
+}
+
 #subscribe {
     padding: 14px;
 }
