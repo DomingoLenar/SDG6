@@ -13,7 +13,6 @@ a {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: Arial, sans-serif;
 }
 
 body {
@@ -62,6 +61,11 @@ nav div.nav-items a:hover {
 
 nav div.nav-items a:visited {
     color: black;
+}
+
+.current-page {
+    background-color: #77d1e566;
+    border-radius: 10px;
 }
 
 #subscribe {
