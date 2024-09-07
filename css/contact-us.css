@@ -135,6 +135,12 @@ label {
     margin-bottom: 15px;
 }
 
+.contact-option img {
+    height: auto;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
 .contact-option h3 {
     color: #4a9db5;
     margin: 10px 0 5px;
