@@ -235,7 +235,7 @@ form h3 {
         margin-bottom: 20px;
     }
 
-    button {
+    #submit-button {
         width: 100%;
     }
 }
@@ -262,7 +262,7 @@ textarea {
     height: 100px;
 }
 
-button {
+button #submit-button{
     background-color: #4a9db5;
     color: white;
     border: none;
