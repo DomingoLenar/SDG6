@@ -7,8 +7,8 @@ body{
 }
 
 footer{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     background-color: #285663;
 }
 
@@ -47,4 +47,12 @@ footer div ul.footer-list li.footer-list-item{
 
 .text-white{
     color:white !important;
+}
+
+/* add css for footer-container here */
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
