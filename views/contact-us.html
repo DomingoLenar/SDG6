@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="\css\contact-us.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/images/amalgam_logo.png" alt="Logo">
+            <div class="nav-items">
+                <a href="">Home</a>
+                <a :visited href="/views/about-us.html">About</a>
+                <a href="">Challenges</a>
+                <a href="">Solutions</a>
+                <a href="">Resources</a>
+                <a href="">Get Involved</a>
+                <a href="">Events</a>
+                <a class="current-page" href="/views/contact-us.html">Contact Us</a>
+            </div>
+            <a href="" id="subscribe"><button> Subscribe </button></a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="banner">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-interface">
+            <h2>Get in touch</h2>
+            <p>Ready to be part of the change? Let's chat about how we can help.</p>
+            <div class="contact-options">
+                <div class="contact-option">
+                    <i class="fas fa-comments"></i>
+                    <h3>Chat for support</h3>
+                    <p>Speak to our friendly team</p>
+                    <a href="#">Chat to team</a>
+                </div>
+                <div class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>Mon-Fri from 8am-5pm</p>
+                    <a href="#">Call our team</a>
+                </div>
+                <div class="contact-option">
+                    <i class="fab fa-instagram"></i>
+                    <h3>View socials</h3>
+                    <p>Follow us on social media</p>
+                    <a href="#">Visit socials</a>
+                </div>
+                <div class="contact-option">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>Visit our office HQ</p>
+                    <a href="#">Get directions</a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <h3>Message Us</h3>
+                <p>We'll get back to you within 24 hours</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" required placeholder="Juan">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" required placeholder="Dela Cruz">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="juandelacruz@website.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0912 3456 789">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send us a message</button>
+            </form>
+    </main>
+</body>
+
+<footer>
+    <div>
+        <ul class="footer-list">
+            <li class="footer-list-header">Company</li>
+            <li class="footer-list-item"><a>About Us</a></li>
+            <li class="footer-list-item"><a>Get Involved</a></li>
+            <li class="footer-list-item"><a>Contact Us</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="footer-list">
+            <li class="footer-list-header">Community</li>
+            <li class="footer-list-item"><a>Resources</a></li>
+            <li class="footer-list-item"><a>Events</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="footer-list">
+            <li class="footer-list-header">What We Do</li>
+            <li class="footer-list-item"><a>Challenges</a></li>
+            <li class="footer-list-item"><a>Solutions</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="footer-list flex">
+            <li class="footer-list-header">Social</li>
+            <li class="footer-list-item"><a href="https://www.facebook.com/profile.php?id=61564988406354">Facebook</a>
+            </li>
+            <li class="footer-list-item"><a>Instagram</a></li>
+            <li class="footer-list-item"><a>Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>
