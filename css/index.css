@@ -1,0 +1,232 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li.logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Banner Section */
+.main-banner {
+    background-image: url("/images/children-photo.png");
+    text-align: left;
+    height: 950px;
+}
+
+.main-banner img {
+    float: left;
+}
+
+.main-banner h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.banner-content {
+    display: flex;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner-content img {
+    width: 15%;
+    height: 20%;
+}
+
+/* Icons Section */
+.icons-section {
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #ffffff;
+}
+
+.icons-section h1 {
+    color: #285663;
+    font-size: 50px;
+}
+
+.icons-section .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon img {
+    height: 300px;
+    width: 250px;
+}
+
+.icon p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon hr {
+    border: none;
+    color: #285663;
+    background-color: #285663;
+    width: 20px;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #cce0e6;
+}
+
+.content-left, .content-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-left h1 {
+    color: #285663;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.content-right button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: #4494AD;
+    border-radius: 20px;
+}
+
+/* Quotes Section */
+.quotes-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.quote {
+    flex: 1;
+    padding: 20px;
+    background: #87BFD0;
+}
+
+.quote p {
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60.51px;
+    text-align: right;
+    color: #285663;
+}
+
+.quote-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Donation Section */
+.donation-section {
+    padding: 40px 20px;
+    background: #87BFD0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-section img {
+    width: 50%;
+    height: auto;
+}
+
+.donation-section h1 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    color: #285663;
+}
+
+.donation-section .social-icons {
+    margin-top: 20px;
+}
+
+.newsletter {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.email-form-container {
+    margin: 200px 0;
+}
+
+.email-form-container h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: #285663;
+}
+
+#submit-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+#email {
+    width: 18em;
+    height: 2.75em;
+    border-radius: 6px;
+    padding: 0 1em;
+}
+
+#submit {
+    margin: 0 0 0 20px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: #4494AD4D;
+    border-radius: 10px;
+    color: #00000040;
+}
