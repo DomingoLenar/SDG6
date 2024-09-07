@@ -39,3 +39,12 @@ footer div ul.footer-list li.footer-list-item{
     font-weight: lighter;
     margin-top: 20px;
 }
+
+.footer-list-item > a{
+    text-decoration: none;
+    color:white;
+}
+
+.text-white{
+    color:white !important;
+}
