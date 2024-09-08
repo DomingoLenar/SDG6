@@ -63,12 +63,12 @@ nav div.nav-items a:visited {
 
 /* Main content styles */
 .main-banner {
-    background-color: #4AA3BA;
-    color: white;
-    padding: 2rem;
+    margin: 0%;
+    background-image: url('/images/contact-us-banner.png');
+    background-size:contain;
+    font-size: 100px;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+    color: white;
 }
 
 .content {
