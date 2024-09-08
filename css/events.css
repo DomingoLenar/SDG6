@@ -82,7 +82,7 @@ nav div.nav-items a:visited {
     display: flex;
     justify-content: space-between;
     height: 550px;
-    background-image: url('/images/events-banner.jpg');
+    background-image: url('/images/events-page/events-banner.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -113,7 +113,7 @@ nav div.nav-items a:visited {
 
 .main-content .events-banner .banner-right-column h2 {
     text-align: right;
-    font-size: 70px;
+    font-size: 75px;
     color: rgb(255, 255, 255);
     position: relative;
     margin-bottom: 30px;
