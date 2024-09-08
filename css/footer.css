@@ -1,0 +1,82 @@
+/* Footer Desktop Style START */
+footer{
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: #285663;
+}
+
+footer div{
+    padding: 3%;
+}
+
+.flex{
+    display: flexbox;
+}
+
+footer div ul.footer-list{
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer div ul.footer-list li.footer-list-header{
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+    text-decoration: underline;
+    text-decoration-color: #77D0E5;
+
+}
+
+footer div ul.footer-list li.footer-list-item{
+    color:white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.footer-list-item > a{
+    text-decoration: none;
+    color:white;
+}
+
+.text-white{
+    color:white !important;
+}
+
+/* add css for footer-container here */
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+/* Footer Desktop Style END */
+
+/* Reusable CSS: */
+
+.button-style-blue-m{
+    border-radius: 10px;
+    border: 0px;
+    background-color:#4495ad;
+    color:white;
+    padding: 10px;
+}
+
+.button-style-blue-m:hover{
+    background-color:#87bfd0;
+}
+
+.button-style-blue-m:active{
+    background-color: #ade9fb;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+     /* Footer Mobile Style START */
+     #footer-container{
+        flex-wrap: wrap;
+    }
+    /* Footer Mobile Style END */
+}

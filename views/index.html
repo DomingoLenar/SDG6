@@ -5,32 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Clean Water and Sanitation</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-         <nav>
-            <img src="/images/amalgam_logo.png" alt="Logo">
-            <div class="nav-items">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Challenges</a>
-                <a href="">Solutions</a>
-                <a href="">Resources</a>
-                <a href="">Get Involved</a>
-                <a href="">Events</a>
-                <a href="/views/contact-us.html">Contact Us</a>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img src="/images/amalgam_logo.png" alt="Logo" class="navbar-logo">
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle" class="navbar-hamburger">☰</label>
+                <div class="navbar-center">
+                    <div class="navbar-menu">
+                        <a href="" class="navbar-item">Home</a>
+                        <a href="" class="navbar-item">About</a>
+                        <a href="" class="navbar-item">Challenges</a>
+                        <a href="" class="navbar-item">Solutions</a>
+                        <a href="" class="navbar-item">Resources</a>
+                        <a href="" class="navbar-item">Get Involved</a>
+                        <a href="" class="navbar-item">Events</a>
+                        <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
+                        <a href="" id="subscribe-hamburger"><button class="button-style-blue-m bold">Subscribe</button></a> 
+                    </div>
+                </div>
+                <a href="" id="subscribe"><button class="button-style-blue-m bold">Subscribe</button></a>
             </div>
-            <a href="" id="subscribe"><button> Subscribe </button></a>
-        </nav>
+        </nav>    
     </header>
 
     <!-- Main Banner Section -->
     <section class="main-banner">
         <div class="banner-content">
             <h1>CLEAN<br>WATER<br>AND<br>SANITATION</h1>
-            <!-- <img src="/images/water.png" alt="Clean Water and Sanitation"> -->
         </div>
     </section>
 
@@ -49,73 +56,39 @@
         </div>
     </section>
 
-    <!-- Icons Section -->
-    <!-- <section class="icons-section">
-        <h1>Sustainable Development Goals 6</h1>
-        <div class="icons">
-            <div class="icon">
-                <img src="/images/water-droplets-icon.png" alt="Icon 1">
-                <p>Water <br>Conservation</p>
-            </div>
-            <div class="icon">
-                <img src="/images/glasswater-icon.png" alt="Icon 2">
-                <p>Access to Safe <br>Drinking Water</p>
-            </div>
-            <div class="icon">
-                <img src="/images/faucet-icon.png" alt="Icon 3">
-                <p>Water Quality <br>and Sanitation</p>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Content Section -->
-    <!-- <section class="content-section">
-        <div class="content-left">
-            <h1>ENSURE AVAILABILITY AND<br> SUSTAINABLE<br> MANAGEMENT OF WATER<br>AND SANITATION FOR ALL.</h1>
-        </div>
-        <div class="content-right">
-            <p>One in three people live without sanitation. This is causing unnecessary disease and death. Although huge strides have been made with access to clean drinking water, lack of sanitation is undermining these advances. If we provide affordable equipment and education in hygiene practices, we can stop this senseless suffering and loss of life.</p>
-            <button>Resources</button>
-            <button>About Us</button>
-            <button>Solutions</button>
-        </div>
-    </section> -->
-
-    <!-- Quotes Section -->
-    <!-- <section class="quotes-section">
-        <div class="quote">
-            <p>"If there is magic in this planet, it is contained in water." - <strong>Loren Eiseley</strong></p>
-        </div>
-        <div class="quote-image">
-            <img src="/images/loren-eiseley.png" alt="Loren Eiseley">
-        </div>
-    </section> -->
-
     <!-- Donation Section -->
     <section class="donation-section">
-        <img src="/images/faucet-hand-photo.png" alt="Donation">
-        <div class="donation-container">
-            <div class="toggle-buttons">
-                <button class="toggle-btn" id="left">Give Once</button>
-                <button class="toggle-btn active" id="right">Monthly</button>
+        <div class="donation-image-container">
+            <div class="image-container">
+                <img src="/images/faucet-hand-photo.png" alt="Woman with child">
             </div>
-            <div class="donation-options">
-                <h2>Choose an amount to give per month</h2>
-                <div class="amount-buttons">
-                    <button class="amount-btn">₱500 PHP/mo</button>
-                    <button class="amount-btn">₱1000 PHP/mo</button>
-                    <button class="amount-btn active">₱2000 PHP/mo</button>
-                    <button class="amount-btn">₱5000 PHP/mo</button>
-                    <input type="text" class="amount-input" placeholder="Other amount">
+            <div class="content">
+                <div class="donation-container">
+                    <div class="toggle-buttons">
+                        <button class="toggle-btn" id="left">Give Once</button>
+                        <button class="toggle-btn active" id="right">Monthly</button>
+                    </div>
+                    <div class="donation-options">
+                        <h2>Choose an amount to give per month</h2>
+                        <div class="amount-buttons">
+                            <button class="amount-btn">₱500 PHP/mo</button>
+                            <button class="amount-btn">₱1000 PHP/mo</button>
+                            <button class="amount-btn active">₱2000 PHP/mo</button>
+                            <button class="amount-btn">₱5000 PHP/mo</button>
+                            <input type="text" class="amount-input" placeholder="Other amount">
+                        </div>
+                        <button class="join-btn">Join Today</button>
+                        <p class="donation-info">Your <strong>₱2000.00</strong> monthly donation can give people clean water every year. 100% funds water projects.</p>
+                    </div>
                 </div>
-                <button class="join-btn">Join Today</button>
-                <p class="donation-info">Your <strong>₱2000.00</strong> monthly donation can give people clean water every year. 100% funds water projects.</p>
             </div>
         </div>
     </section>
 
     <div class="newsletter">
-        <img src="/images/left-hand-waterbottle-photo.png" alt="Left Hand Holding Water Bottle`">
+        <div class="newsletter-image">
+            <img src="/images/left-hand-waterbottle-photo.png" alt="Left Hand Holding Water Bottle`">
+        </div>
         <div class="email-form-container">
             <h1>Thirst for Knowledge? <br>Quench it with Our Newsletter on Water and Sanitation!</h1>
             <!-- Submit Form -->
@@ -124,7 +97,43 @@
 				<input type="submit" id="submit" value="Submit" />
 			</form>
         </div>
-        <img src="/images/right-hand-waterbottle-photo.png" alt="Right Hand Holding Water Bottle`">
+        <div class="newsletter-image">
+            <img src="/images/right-hand-waterbottle-photo.png" alt="Right Hand Holding Water Bottle`">
+        </div>
     </div>
+    <footer>
+        <div id="footer-container">
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Company</li>
+                    <li class="footer-list-item"><a>About Us</a></li>
+                    <li class="footer-list-item"><a>Get Involved</a></li>
+                    <li class="footer-list-item"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Community</li>
+                    <li class="footer-list-item"><a>Resources</a></li>
+                    <li class="footer-list-item"><a>Events</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">What We Do</li>
+                    <li class="footer-list-item"><a>Challenges</a></li>
+                    <li class="footer-list-item"><a>Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list flex">
+                    <li class="footer-list-header">Social</li>
+                    <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
+                    <li class="footer-list-item"><a>Instagram</a></li>
+                    <li class="footer-list-item"><a>Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
