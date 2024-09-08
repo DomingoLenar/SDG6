@@ -206,7 +206,9 @@ nav div.nav-items a:visited {
 }
 
 footer {
-    background-color: #333;
+    background-color: #285663;
+    width: 2051px;
+    height: 70px;
     color: white;
     padding: 2rem;
     text-align: center;
