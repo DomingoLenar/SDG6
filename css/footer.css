@@ -1,0 +1,50 @@
+html *{
+    font-family: Inter !important
+}
+
+body{
+    margin:0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #285663;
+}
+
+footer div{
+    padding: 3%;
+}
+
+.flex{
+    display: flexbox;
+}
+
+footer div ul.footer-list{
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer div ul.footer-list li.footer-list-header{
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+    text-decoration: underline;
+    text-decoration-color: #77D0E5;
+
+}
+
+footer div ul.footer-list li.footer-list-item{
+    color:white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.footer-list-item > a{
+    text-decoration: none;
+    color:white;
+}
+
+.text-white{
+    color:white !important;
+}

@@ -1,0 +1,325 @@
+html * {
+    font-family: Inter !important;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and navigation styling */
+header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav img {
+    width: 10%;
+    height: auto;
+    margin-left: 5px;
+}
+
+nav div.nav-items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav div.nav-items a {
+    text-decoration: none;
+    padding: 14px;
+    color: black;
+}
+
+nav div.nav-items a:hover {
+    background-color: #77d1e566;
+    border-radius: 10px;
+    color: black;
+
+}
+
+nav div.nav-items a:visited {
+    color: black;
+}
+
+.current-page {
+    background-color: #77d1e566;
+    border-radius: 10px;
+}
+
+#subscribe {
+    padding: 14px;
+}
+
+#subscribe button {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4495ad;
+    color: white;
+    font-weight: bold;
+}
+
+#subscribe button:hover {
+    background-color: #87bfd0;
+}   
+
+/* About Us section */
+
+#about-us {
+    display: flex;
+    overflow: auto;
+    padding: 2rem 1rem;
+    background-color: #4494ad;
+    color: #fff;
+}
+
+.about-us-text {
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+
+.about-us-img {
+    width: 30%;
+    float: left;
+}
+
+#about-us h1 {
+    font-size: 150px;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #285663;
+    text-shadow:2px 2px #333;
+}
+
+#about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #ffffff;
+}
+
+#about-us h3 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.about-us-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#our-goal h2{
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #1d3557;
+    text-shadow: 2px 2px #333;
+    padding:10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#our-goal {
+    background-color:#285663;
+}
+
+
+#our-goal h2 .our-text {
+    color: #fff;
+}
+
+/* Cards container */
+.cards-container {
+     display: flex;           
+    flex-wrap: wrap;         
+    justify-content: space-between; 
+    gap: 20px;                
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cards-container h3 {
+    color: #4494ad;
+    text-shadow: 2px 2px #333;
+}
+
+.knowledge-card {
+    background-image: url('/images/washinghands1-photo.png');
+}
+
+.mission-card {
+    background-image: url('/images/faucet-photo.png');
+}
+
+.policy-analysis-card {
+    background-image: url('/images/washinghands-photo.png');
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+/*who-we-are section*/
+
+/* who-we-are section */
+#who-we-are {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f0f4f8;
+    overflow: hidden;
+    text-align: left;
+    padding: 2rem;
+}
+
+#who-we-are-text {
+    flex: 1;
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.who-we-are-team {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*who-we-are section, left column*/
+
+#who-we-are h2 {
+    text-align: left;
+}
+
+#who-we-are h2 .who-text {
+    font-size: 80px;
+    padding-left: 3%;
+    color: #4494ad;
+    text-shadow: 2px 2px #333;
+}
+
+#who-we-are h2 .we-are-text {
+    font-size: 80px;
+    padding-left: 3%;
+    color:#285663;
+    text-shadow: 2px 2px #333;
+}
+
+#who-we-are p {
+    text-align: left;
+    padding-left: 3%;
+}
+
+/*who-we-are section, right column*/
+
+.member {
+    align-items: center;
+    width: 18%;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1%;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.member h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.social-links a {
+    margin: 0 0.2rem;
+}
+
+.social-links img {
+    width: auto;
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #285663;
+}
+
+footer div {
+    padding: 3%;
+}
+
+.flex {
+    display: flexbox;
+}
+
+footer div ul.footer-list {
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer div ul.footer-list li.footer-list-header {
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+    text-decoration: underline;
+    text-decoration-color: #77D0E5;
+
+}
+
+footer div ul.footer-list li.footer-list-item {
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
