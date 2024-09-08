@@ -13,7 +13,6 @@ a {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: Arial, sans-serif;
 }
 
 body {
@@ -62,6 +61,11 @@ nav div.nav-items a:hover {
 
 nav div.nav-items a:visited {
     color: black;
+}
+
+.current-page {
+    background-color: #77d1e566;
+    border-radius: 10px;
 }
 
 #subscribe {
@@ -228,9 +232,13 @@ nav div.nav-items a:visited {
 }
 
 /*who-we-are section, left column*/
+
+#who-we-are h2 {
+    text-align: left;
+}
+
 #who-we-are h2 .who-text {
     font-size: 80px;
-    text-align: left;
     padding-left: 3%;
     color: #4494ad;
     text-shadow: 2px 2px #333;
@@ -238,7 +246,6 @@ nav div.nav-items a:visited {
 
 #who-we-are h2 .we-are-text {
     font-size: 80px;
-    text-align: left;
     padding-left: 3%;
     color:#285663;
     text-shadow: 2px 2px #333;
