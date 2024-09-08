@@ -1,0 +1,210 @@
+/* Universal font */
+html * {
+    font-family: Inter, sans-serif !important;
+}
+
+body {
+    margin: 0;
+}
+
+/* Navbar Desktop Style Start  */
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    width: 10%;
+    height: auto;
+    margin-left: 5px;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    text-decoration: none;
+    padding: 14px;
+    color: black;
+}
+
+.navbar-item:hover {
+    background-color: #77d1e566;
+    border-radius: 10px;
+    color: black;
+}
+
+.navbar-item:visited {
+    color: black;
+}
+
+#subscribe {
+    padding: 14px;
+}
+
+#subscribe-hamburger{
+    display: none;
+}
+
+
+.navbar-hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* This is important */
+#navbar-toggle {
+    display: none;
+} 
+
+/* Navbar Desktop Style END */
+
+
+/* Footer Desktop Style START */
+footer{
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: #285663;
+}
+
+footer div{
+    padding: 3%;
+}
+
+.flex{
+    display: flexbox;
+}
+
+footer div ul.footer-list{
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer div ul.footer-list li.footer-list-header{
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+    text-decoration: underline;
+    text-decoration-color: #77D0E5;
+
+}
+
+footer div ul.footer-list li.footer-list-item{
+    color:white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.footer-list-item > a{
+    text-decoration: none;
+    color:white;
+}
+
+.text-white{
+    color:white !important;
+}
+
+/* add css for footer-container here */
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+/* Footer Desktop Style END */
+
+/* Reusable CSS: */
+
+.button-style-blue-m{
+    border-radius: 10px;
+    border: 0px;
+    background-color:#4495ad;
+    color:white;
+    padding: 10px;
+}
+
+.button-style-blue-m:hover{
+    background-color:#87bfd0;
+}
+
+.button-style-blue-m:active{
+    background-color: #ade9fb;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Navbar Mobile Style START */
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-logo {
+        width: 35%;
+        height: auto;
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+
+    .navbar-center {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #navbar-toggle:checked ~ .navbar-center .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #subscribe {
+        display: none;
+    }
+
+    #subscribe-hamburger{
+        display:inline
+    }
+
+    /* Navbar Mobile Style END */
+
+    /* Footer Mobile Style START */
+    #footer-container{
+        flex-wrap: wrap;
+    }
+    /* Footer Mobile Style END */
+}
