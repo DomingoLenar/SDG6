@@ -10,19 +10,26 @@
 
 <body>
     <header>
-        <nav>
-            <img src="/images/amalgam_logo.png" alt="Logo">
-            <div class="nav-items">
-                <a href="">Home</a>
-                <a href="/views/about-us.html">About</a>
-                <a href="">Challenges</a>
-                <a href="">Solutions</a>
-                <a href="">Resources</a>
-                <a href="/views/get-involved.html">Get Involved</a>
-                <a class="current-page" href="/views/events.html"><b>Events</b></a>
-                <a href="/views/contact-us.html">Contact Us</a>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img src="/images/amalgam_logo.png" alt="Logo" class="navbar-logo">
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle" class="navbar-hamburger">☰</label>
+                <div class="navbar-center">
+                    <div class="navbar-menu">
+                        <a href="" class="navbar-item">Home</a>
+                        <a href="/views/about-us.html" class="navbar-item">About</a>
+                        <a href="/views/challenges.html" class="navbar-item">Challenges</a>
+                        <a href="" class="navbar-item">Solutions</a>
+                        <a href="" class="navbar-item">Resources</a>
+                        <a href="/views/get-involved.html" class="navbar-item">Get Involved</a>
+                        <a id="active-page" href="/views/events.html" class="navbar-item"><b>Events</b></a>
+                        <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
+                        <a href="" id="subscribe-hamburger"><button class="button-style-blue-m bold">Subscribe</button></a>
+                    </div>
+                </div>
+                <a href="" id="subscribe"><button class="button-style-blue-m bold">Subscribe</button></a>
             </div>
-            <a href="" id="subscribe"><button> Subscribe </button></a>
         </nav>
     </header>
     <main class="main-content">

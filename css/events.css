@@ -1,14 +1,25 @@
 html * {
     font-family: Inter !important;
-    margin: 0%;
-    padding: 0%;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header and navigation styling */
@@ -17,44 +28,56 @@ header {
     padding: 1rem 0;
 }
 
-nav {
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-nav img {
+.navbar-logo {
     width: 10%;
     height: auto;
     margin-left: 5px;
 }
 
-nav div.nav-items {
-    margin: 0;
-    padding: 0;
+.navbar-center {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-nav div.nav-items a {
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
     text-decoration: none;
     padding: 14px;
     color: black;
 }
 
-nav div.nav-items a:hover {
+.navbar-item:hover {
     background-color: #77d1e566;
     border-radius: 10px;
     color: black;
-
 }
 
-nav div.nav-items a:visited {
+.navbar-item:visited {
     color: black;
 }
 
-.current-page {
-    background-color: #77d1e566;
+.navbar-item#active-page {
+    background-color: #90e2f5;
     border-radius: 10px;
 }
 
@@ -62,19 +85,91 @@ nav div.nav-items a:visited {
     padding: 14px;
 }
 
-#subscribe button {
-    border: 0;
+#subscribe-hamburger {
+    display: none;
+}
+
+
+.navbar-hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#navbar-toggle {
+    display: none;
+}
+
+/* Reusable CSS: */
+
+.button-style-blue-m {
     border-radius: 10px;
-    padding: 10px;
+    border: 0px;
     background-color: #4495ad;
     color: white;
-    font-weight: bold;
+    padding: 10px;
+}
+
+.button-style-blue-m:hover {
+    background-color: #87bfd0;
 }
 
 #subscribe button:hover {
     background-color: #87bfd0;
 }
 
+.button-style-blue-m:active {
+    background-color: #ade9fb;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-logo {
+        width: 35%;
+        height: auto;
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+
+    .navbar-center {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #navbar-toggle:checked~.navbar-center .navbar-menu {
+        display: flex;
+    }
+
+    .navbar-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #subscribe {
+        display: none;
+    }
+
+    #subscribe-hamburger {
+        display: inline
+    }
+}
 /*Main Body*/
 
 /*Events Banner Area*/
