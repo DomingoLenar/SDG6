@@ -91,7 +91,7 @@ footer div{
 }
 
 .flex{
-    display: flexbox;
+    display: flex;
 }
 
 footer div ul.footer-list{
@@ -119,9 +119,6 @@ footer div ul.footer-list li.footer-list-item{
     color:white;
 }
 
-.text-white{
-    color:white !important;
-}
 
 /* add css for footer-container here */
 
@@ -132,7 +129,27 @@ footer div ul.footer-list li.footer-list-item{
 }
 /* Footer Desktop Style END */
 
+/* News-letter Style Start */
+
+#newsletter-header{
+    padding:20px;
+}
+
+/* News-letter Style END */
+
 /* Reusable CSS: */
+
+.text-white{
+    color:white !important;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.big-text{
+    font-size: 300%;
+}
 
 .button-style-blue-m{
     border-radius: 10px;
@@ -152,6 +169,35 @@ footer div ul.footer-list li.footer-list-item{
 
 .bold{
     font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+.background-wave{
+    background-image: url("/images/wave.png");
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+.container > h1{
+    margin:0
+}
+
+
+.margin-5per{
+    margin:5%;
+}
+
+.margin-left-10per{
+    margin-left:10%;
+}
+
+img.img-40per{
+    width: 40%;
+    height: auto;
 }
 
 @media only screen and (max-width: 768px) {
