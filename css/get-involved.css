@@ -204,15 +204,41 @@ nav div.nav-items a:visited {
     margin-right: 1.5rem;
     border-radius: 30px;
 }
-
+/* Footer */
 footer {
+    display: flex;
+    justify-content: center;
     background-color: #285663;
-    width: 2051px;
-    height: 70px;
-    color: white;
-    padding: 2rem;
-    text-align: center;
 }
+
+footer div {
+    padding: 3%;
+}
+
+.flex {
+    display: flexbox;
+}
+
+footer div ul.footer-list {
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer div ul.footer-list li.footer-list-header {
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+    text-decoration: underline;
+    text-decoration-color: #77D0E5;
+
+}
+
+footer div ul.footer-list li.footer-list-item {
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
