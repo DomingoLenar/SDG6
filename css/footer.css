@@ -6,45 +6,63 @@ body{
     margin:0;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
+/* Footer Desktop Style START */
+footer {
     background-color: #285663;
 }
 
-footer div{
+footer div {
     padding: 3%;
 }
 
-.flex{
-    display: flexbox;
+.flex {
+    display: flex;
 }
 
-footer div ul.footer-list{
-    list-style-type: none;
+.justify-center {
     justify-content: center;
 }
 
-footer div ul.footer-list li.footer-list-header{
+footer div ul.footer-list {
+    list-style-type: none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+footer div ul.footer-list li.footer-list-header {
     color: white;
     font-weight: bolder;
     font-size: 140%;
     text-decoration: underline;
     text-decoration-color: #77D0E5;
-
 }
 
-footer div ul.footer-list li.footer-list-item{
-    color:white;
+footer div ul.footer-list li.footer-list-item {
+    color: white;
     font-weight: lighter;
     margin-top: 20px;
 }
 
-.footer-list-item > a{
+.footer-list-item > a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.text-white{
-    color:white !important;
+#footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+@media only screen and (max-width: 980px) {
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-container > div {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
 }
