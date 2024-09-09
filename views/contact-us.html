@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/css/contact-us.css">
-    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 
 <body>
+    <header>
+    <!-- Header Section -->
     <header>
         <nav class="navbar">
             <div class="navbar-container">
@@ -19,20 +21,23 @@
                 <label for="navbar-toggle" class="navbar-hamburger">☰</label>
                 <div class="navbar-center">
                     <div class="navbar-menu">
-                        <a href="index.html" class="navbar-item">Home</a>
-                        <a href="about-us.html" class="navbar-item">About</a>
-                        <a href="" class="navbar-item">Challenges</a>
-                        <a href="solutions.html" class="navbar-item">Solutions</a>
-                        <a href="resources.html" class="navbar-item">Resources</a>
-                        <a href="get-involved.html" class="navbar-item">Get Involved</a>
-                        <a href="events.html" class="navbar-item">Events</a>
+                        <a href="/index.html" class="navbar-item">Home</a>
+                        <a href="/views/about-us.html" class="navbar-item">About</a>
+                        <a href="/views/challenges.html" class="navbar-item">Challenges</a>
+                        <a href="/views/solutions.html" class="navbar-item">Solutions</a>
+                        <a href="/views/resources.html" class="navbar-item">Resources</a>
+                        <a href="/views/get-involved.html" class="navbar-item">Get Involved</a>
+                        <a href="/views/events.html" class="navbar-item">Events</a>
                         <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
-                        <button id="subscribe-hamburger" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
+                        <button id="subscribe-hamburger" class="button-style-blue-m bold"
+                            onClick="window.location.href='news-letter.html'">Subscribe</button>
                     </div>
                 </div>
-                <button id="subscribe" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
+                <button id="subscribe" class="button-style-blue-m bold"
+                    onClick="window.location.href='news-letter.html'">Subscribe</button>
             </div>
         </nav>
+    </header>
     </header>
 
     <main class="main-content">
@@ -44,29 +49,45 @@
             <p>Ready to be part of the change? Let's chat about how we can help.</p>
             <div class="contact-options">
                 <div class="contact-option">
-                    <img id="chat-icon" src="/images\chat-icon.png" alt="chat-icon">
-                    <h3>Chat for support</h3>
-                    <p>Speak to our friendly team</p>
-                    <a href="#">Chat to team</a>
+                    <div class="contact-icon">
+                        <img id="chat-icon" src="/images/contact-us-page/chat-icon.png" alt="chat-icon">
+                    </div>
+                    <div class="contact-description">
+                        <h3>Chat for support</h3>
+                        <p>Speak to our friendly team</p>
+                        <a href="#">Chat to team</a>
+                    </div>
                 </div>
                 <div class="contact-option">
-                    <img id="phone-icon" src="\images\phone-icon.png" alt="phone-icon">
-                    <h3>Call Us</h3>
-                    <p>Mon-Fri from 8am-5pm</p>
-                    <a href="#">Call our team</a>
+                    <div class="contact-icon">
+                        <img id="phone-icon" src="/images/contact-us-page/phone-icon.png" alt="phone-icon">
+                    </div>
+                    <div class="contact-description">
+                        <h3>Call Us</h3>
+                        <p>Mon-Fri from 8am-5pm</p>
+                        <a href="#">Call our team</a>
+                    </div>
                 </div>
                 <div class="contact-option">
-                    <img src="\images\instagram-flaticon.png" alt="instagram-flaticon">
-                    <h3>View socials</h3>
-                    <p>Follow us on social media</p>
-                    <a href="#">Visit socials</a>
+                    <div class="contact-icon">
+                        <img src="/images/contact-us-page/instagram-flaticon.png" alt="instagram-flaticon">
+                    </div>
+                    <div class="contact-description">
+                        <h3>View socials</h3>
+                        <p>Follow us on social media</p>
+                        <a href="#">Visit socials</a>
+                    </div>
                 </div>
                 <div class="contact-option">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <img src="\images\location-icon.png" alt="location-icon">
-                    <h3>Visit Us</h3>
-                    <p>Visit our office HQ</p>
-                    <a href="#">Get directions</a>
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <img src="/images/contact-us-page/location-icon.png" alt="location-icon">
+                    </div>
+                    <div class="contact-description">
+                        <h3>Visit Us</h3>
+                        <p>Visit our office HQ</p>
+                        <a href="#">Get directions</a>
+                    </div>
                 </div>
             </div>
             <form id="contact-form">
@@ -96,41 +117,41 @@
                 </div>
                 <button id="submit-button" type="submit">Send us a message</button>
             </form>
+        </div>
     </main>
+    <footer>
+        <div id="footer-container">
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Company</li>
+                    <li class="footer-list-item">About Us</li>
+                    <li class="footer-list-item">Get Involved</li>
+                    <li class="footer-list-item">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Community</li>
+                    <li class="footer-list-item">Resources</li>
+                    <li class="footer-list-item">Events</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">What We Do</li>
+                    <li class="footer-list-item">Challenges</li>
+                    <li class="footer-list-item">Solutions</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Social</li>
+                    <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
+                    <li class="footer-list-item">Instagram</li>
+                    <li class="footer-list-item">Twitter</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div id="footer-container">
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">Company</li>
-                <li class="footer-list-item">About Us</li>
-                <li class="footer-list-item">Get Involved</li>
-                <li class="footer-list-item">Contact Us</li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">Community</li>
-                <li class="footer-list-item">Resources</li>
-                <li class="footer-list-item">Events</li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">What We Do</li>
-                <li class="footer-list-item">Challenges</li>
-                <li class="footer-list-item">Solutions</li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">Social</li>
-                <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
-                <li class="footer-list-item">Instagram</li>
-                <li class="footer-list-item">Twitter</li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
 </html>

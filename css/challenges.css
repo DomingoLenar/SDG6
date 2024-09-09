@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #285663;
+    --bg-color: #f0f4f8;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+    background-image: url('/images/challenges-page/challenges-banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.banner h1 {
+    color: var(--white);
+    font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+/* Introduction */
+.introduction-container {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 0 2rem;
+}
+
+.introduction-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.introduction-left .water-bottle {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.introduction-right {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction-right h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.introduction-right p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    text-indent: 5%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .introduction-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .introduction-left,
+    .introduction-right {
+        width: 100%;
+    }
+
+    .introduction-left .water-bottle {
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction-left .water-bottle {
+        max-height: 250px;
+    }
+}
+
+/* Challenges */
+.challenges-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.challenge {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.challenge-photo {
+    flex: 1;
+}
+
+.challenge-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.challenge-description {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.challenge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.challenge-header h1 {
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    color: var(--primary-color);
+}
+
+.challenge-number {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: bold;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge-description p {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .introduction-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .introduction-left, .introduction-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .challenge {
+        flex-direction: column;
+    }
+
+    .challenge-photo, .challenge-description {
+        width: 100%;
+    }
+
+    .challenge-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .challenge-number {
+        align-self: flex-end;
+    }
+}
