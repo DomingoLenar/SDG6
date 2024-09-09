@@ -361,33 +361,6 @@ body {
         flex-direction: column;
     }
 
-    nav {
-        padding: 0;
-    }
-
-    .navbar {
-        padding: 0;
-    }
-
-
-    .events-section {
-      padding: 10px;
-    }
-  
-    .event-card {
-      margin-bottom: 15px;
-    }
-  
-    .event-image img {
-      width: 100%; /* Ensure full-width & full-height images */
-      height: 100%;
-    }
-  
-    .register-btn{
-      width: 100%;
-      margin-top: 10px;
-    }
-
     .newsletter-image {
         display: none;
     }
