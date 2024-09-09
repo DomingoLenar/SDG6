@@ -176,7 +176,7 @@ header {
     margin: 0%;
     background-image: url('/images/contact-us-page/contact-us-banner.png');
     background-size:contain;
-    font-size: 100px;
+    font-size: 10vw;
     text-align: center;
     color: white;
 }
@@ -195,15 +195,20 @@ label {
 
 .contact-interface h2{
     color:#4495ad;
-    font-size: 70px;
+    font-size: 7vw;
     text-shadow: 2px 2px #333;
     margin-bottom: 0%;
+}
+
+.contact-interface p {
+    font-size: 2vw;
 }
 
 .contact-options {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    gap: 1rem;
 }
 
 .contact-option {
@@ -265,24 +270,25 @@ label {
 
 #contact-form h3 {
     color:#285663;
-    font-size: 60px;
+    font-size: 8vw;
     text-shadow: 2px 2px #333;
     margin-bottom: 0%;
 }
 
 #contact-form p {
     margin-bottom: 8%;
+    font-size: 2vw;
 }
 
 @media screen and (max-width: 768px) {
     .contact-options {
         display: block;
+        padding: 20%;
     }
 
     .contact-option {
-        width: auto;
+        width: 100%;
         margin-bottom: 20px;
-
     }
 }
 
