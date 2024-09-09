@@ -179,7 +179,7 @@ img.img-40per {
     max-width: 400px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
 
     /* Navbar Mobile Style START */
     .navbar-container {
