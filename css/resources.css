@@ -118,14 +118,6 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
-
-footer {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
 .un-container {
     display: flex;
     justify-content: center;
