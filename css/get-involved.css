@@ -31,7 +31,6 @@ body, html {
 }
 
 .connect-text {
-    font: weight 3000px;
     font-size: 5rem;
     color: #4AA3BA;
     margin-bottom: 1rem;
@@ -119,7 +118,7 @@ body, html {
 }
 
 .payment-methods img {
-    align-items: right;
+    align-items: end;
     height: 30px;
 }
 
@@ -140,7 +139,6 @@ body, html {
     border-radius: 20px;
     margin-bottom: 1.5rem;
     display: flex;
-    align-items: right;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
