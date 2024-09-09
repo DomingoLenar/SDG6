@@ -94,6 +94,10 @@ footer div{
     display: flex;
 }
 
+.justify-center{
+    justify-content:center;
+}
+
 footer div ul.footer-list{
     list-style-type: none;
     justify-content: center;
@@ -135,12 +139,20 @@ footer div ul.footer-list li.footer-list-item{
     padding:20px;
 }
 
+#subscribe-tagline{
+    font-size: 450%;
+}
+
 /* News-letter Style END */
 
 /* Reusable CSS: */
 
 .text-white{
     color:white !important;
+}
+
+.text-primary-dark{
+    color:#285663;
 }
 
 .text-center{
@@ -198,6 +210,15 @@ footer div ul.footer-list li.footer-list-item{
 img.img-40per{
     width: 40%;
     height: auto;
+}
+
+.rounded-blue-m{
+    border-radius: 20px;
+    background-color:#77D0E5;
+    border: 0;
+    padding: 20px;
+    width: 80%;
+    
 }
 
 @media only screen and (max-width: 768px) {
