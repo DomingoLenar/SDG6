@@ -13,32 +13,10 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.amalgam_logo {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
 }
 
 .topic-section {
@@ -54,7 +32,6 @@ nav ul li a {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-
 
 .topic-card {
     display: flex;
@@ -75,18 +52,29 @@ nav ul li a {
 }
 
 .resource-card {
-    width: 100%;
-    height: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     display: flex;
+    align-items: center;
+}
+
+.resource-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.resource-card img {
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
 }
 
 .resource-card#sdg-book-club {
     background-color: #FFFFFF;
-    ;
 }
 
 .resource-card#sdg-teachers-guide {
@@ -95,13 +83,6 @@ nav ul li a {
 
 .resource-card#sdg-act-now {
     background-color: #4494AD;
-}
-
-.resource-card img {
-    width: 25%;
-    height: 25%;
-    padding: 20px;
-    margin: 20px 50px;
 }
 
 .resource-content {
@@ -113,6 +94,7 @@ nav ul li a {
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex: 2;
     /* Todo: import font-family: Inter; */
 }
 
@@ -187,4 +169,30 @@ hr {
 .topic-content img{
     width: 10%;
     height: auto;
+}
+
+
+/* Styles for small screens (phones) */
+@media only screen and (max-width: 767px) {
+    .resource-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .resource-card img {
+        margin: 0;
+    }
+
+    .resource-content p {
+        padding: 0;
+    }
+
+    .topic-section {
+        display: none;
+    }
+
+    .un-container {
+        padding: 5px;
+    }
+
 }

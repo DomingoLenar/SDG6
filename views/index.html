@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Clean Water and Sanitation</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-         <nav>
-            <img src="/images/amalgam_logo.png" alt="Logo">
-            <div class="nav-items">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Challenges</a>
-                <a href="">Solutions</a>
-                <a href="">Resources</a>
-                <a href="">Get Involved</a>
-                <a href="">Events</a>
-                <a href="/views/contact-us.html">Contact Us</a>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img src="/images/amalgam_logo.png" alt="Logo" class="navbar-logo">
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle" class="navbar-hamburger">☰</label>
+                <div class="navbar-center">
+                    <div class="navbar-menu">
+                        <a href="index.html" class="navbar-item">Home</a>
+                        <a href="about-us.html" class="navbar-item">About</a>
+                        <a href="" class="navbar-item">Challenges</a>
+                        <a href="solutions.html" class="navbar-item">Solutions</a>
+                        <a href="resources.html" class="navbar-item">Resources</a>
+                        <a href="" class="navbar-item">Get Involved</a>
+                        <a href="" class="navbar-item">Events</a>
+                        <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
+                        <button id="subscribe-hamburger" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
+                    </div>
+                </div>
+                <button id="subscribe" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
             </div>
-            <a href="" id="subscribe"><button> Subscribe </button></a>
         </nav>
     </header>
 
@@ -30,27 +38,11 @@
     <section class="main-banner">
         <div class="banner-content">
             <h1>CLEAN<br>WATER<br>AND<br>SANITATION</h1>
-            <!-- <img src="/images/water.png" alt="Clean Water and Sanitation"> -->
-        </div>
-    </section>
-
-    <section class="events-section">
-        <h1 class="events-title">Upcoming Events</h1>
-        <div class="event-card">
-            <div class="event-details">
-                <h2 class="event-title">Beach Cleanup Drive Charity Gala</h2>
-                <p class="event-datetime">Oct 07, 2024, 11:57 PM - Oct 08, 2024, 1:57 AM</p>
-                <p class="event-location">23 RH 5 Subic Baraca National Hwy Olongapo, Central Luzon</p>
-                <button class="register-btn">Register Now</button>
-            </div>
-            <div class="event-image">
-                <img src="/images/ocean-cleanup-charity-photo.png" alt="Ocean Cleanup Charity Gala Image">
-            </div>
         </div>
     </section>
 
     <!-- Icons Section -->
-    <!-- <section class="icons-section">
+    <section class="icons-section">
         <h1>Sustainable Development Goals 6</h1>
         <div class="icons">
             <div class="icon">
@@ -66,10 +58,10 @@
                 <p>Water Quality <br>and Sanitation</p>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Content Section -->
-    <!-- <section class="content-section">
+    <section class="content-section">
         <div class="content-left">
             <h1>ENSURE AVAILABILITY AND<br> SUSTAINABLE<br> MANAGEMENT OF WATER<br>AND SANITATION FOR ALL.</h1>
         </div>
@@ -79,43 +71,40 @@
             <button>About Us</button>
             <button>Solutions</button>
         </div>
-    </section> -->
-
-    <!-- Quotes Section -->
-    <!-- <section class="quotes-section">
-        <div class="quote">
-            <p>"If there is magic in this planet, it is contained in water." - <strong>Loren Eiseley</strong></p>
-        </div>
-        <div class="quote-image">
-            <img src="/images/loren-eiseley.png" alt="Loren Eiseley">
-        </div>
-    </section> -->
-
-    <!-- Donation Section -->
-    <section class="donation-section">
-        <img src="/images/faucet-hand-photo.png" alt="Donation">
-        <div class="donation-container">
-            <div class="toggle-buttons">
-                <button class="toggle-btn" id="left">Give Once</button>
-                <button class="toggle-btn active" id="right">Monthly</button>
-            </div>
-            <div class="donation-options">
-                <h2>Choose an amount to give per month</h2>
-                <div class="amount-buttons">
-                    <button class="amount-btn">₱500 PHP/mo</button>
-                    <button class="amount-btn">₱1000 PHP/mo</button>
-                    <button class="amount-btn active">₱2000 PHP/mo</button>
-                    <button class="amount-btn">₱5000 PHP/mo</button>
-                    <input type="text" class="amount-input" placeholder="Other amount">
-                </div>
-                <button class="join-btn">Join Today</button>
-                <p class="donation-info">Your <strong>₱2000.00</strong> monthly donation can give people clean water every year. 100% funds water projects.</p>
-            </div>
-        </div>
     </section>
-
+    
+        <!-- Quotes Section -->
+        <section class="quotes-section">
+            <div class="quote">
+                <p>"If there is magic in this planet, it is contained in water." - <strong>Loren Eiseley</strong></p>
+            </div>
+            <div class="quote-image">
+                <img src="/images/loren-eiseley.png" alt="Loren Eiseley">
+            </div>
+        </section>
+    
+        <!-- Donation Section -->
+        <section class="donation-section">
+            <div class="donation-container">
+                <img class="donation-image" src="/images/faucet-hand-photo.png" alt="Donation">
+                <div>
+                    <h1>Donate <br>today and <br>make twice <br>the impact!</h1>
+                    <div class="payment-options-container">
+                        <div class="payment-card"><img src="/images/visa-logo.png" alt="Visa"></div>
+                        <div class="payment-card"><img src="/images/paypal-logo.png" alt="PayPal"></div>
+                        <div class="payment-card"><img src="/images/apple-pay-logo.png" alt="Apple Pay"></div>
+                        <div class="payment-card"><img src="/images/google-pay-logo.png" alt="Google Pay"></div>
+                        <div class="payment-card"><img src="/images/mastercard-logo.png" alt="MasterCard"></div>
+                        <div class="payment-card"><img src="/images/bitcoin-logo.png" alt="Bitcoin"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
     <div class="newsletter">
-        <img src="/images/left-hand-waterbottle-photo.png" alt="Left Hand Holding Water Bottle`">
+        <div class="newsletter-image">
+            <img src="/images/left-hand-waterbottle-photo.png" alt="Left Hand Holding Water Bottle`">
+        </div>
         <div class="email-form-container">
             <h1>Thirst for Knowledge? <br>Quench it with Our Newsletter on Water and Sanitation!</h1>
             <!-- Submit Form -->
@@ -124,7 +113,43 @@
 				<input type="submit" id="submit" value="Submit" />
 			</form>
         </div>
-        <img src="/images/right-hand-waterbottle-photo.png" alt="Right Hand Holding Water Bottle`">
+        <div class="newsletter-image">
+            <img src="/images/right-hand-waterbottle-photo.png" alt="Right Hand Holding Water Bottle`">
+        </div>
     </div>
+    <footer>
+        <div id="footer-container">
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Company</li>
+                    <li class="footer-list-item">About Us</li>
+                    <li class="footer-list-item">Get Involved</li>
+                    <li class="footer-list-item">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Community</li>
+                    <li class="footer-list-item">Resources</li>
+                    <li class="footer-list-item">Events</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">What We Do</li>
+                    <li class="footer-list-item">Challenges</li>
+                    <li class="footer-list-item">Solutions</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Social</li>
+                    <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
+                    <li class="footer-list-item">Instagram</li>
+                    <li class="footer-list-item">Twitter</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

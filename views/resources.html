@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - Clean Water and Sanitation</title>
     <link rel="stylesheet" href="/css/resources.css">
-    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <nav>
-            <img src="/images/amalgam_logo.png" alt="Logo">
-            <div class="nav-items">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Challenges</a>
-                <a href="">Solutions</a>
-                <a href="">Resources</a>
-                <a href="">Get Involved</a>
-                <a href="">Events</a>
-                <a href="/views/contact-us.html">Contact Us</a>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img src="/images/amalgam_logo.png" alt="Logo" class="navbar-logo">
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle" class="navbar-hamburger">☰</label>
+                <div class="navbar-center">
+                    <div class="navbar-menu">
+                        <a href="index.html" class="navbar-item">Home</a>
+                        <a href="about-us.html" class="navbar-item">About</a>
+                        <a href="" class="navbar-item">Challenges</a>
+                        <a href="" class="navbar-item">Solutions</a>
+                        <a href="" class="navbar-item">Resources</a>
+                        <a href="" class="navbar-item">Get Involved</a>
+                        <a href="" class="navbar-item">Events</a>
+                        <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
+                        <a href="news-letter.html" id="subscribe-hamburger"><button class="button-style-blue-m bold">Subscribe</button></a> 
+                    </div>
+                </div>
+                <a href="" id="subscribe"><button class="button-style-blue-m bold">Subscribe</button></a>
             </div>
-            <a href="" id="subscribe"><button> Subscribe </button></a>
-        </nav>
+        </nav>    
     </header>
 
     <main>
@@ -30,12 +39,10 @@
             <div class="topic-card">
                 <div class="topic-content">
                     <h1 id="topic-content">Clean Water and Sanitation</h1>
-                    <img src="/images/water.png"/>
                 </div>
                 <h1>Resources</h1>
             </div>
         </section>
-
         <section class="resource-section">
             <div class="resource-card" id="sdg-book-club">
                 <img src="/images/sdg_bookclub.png" alt="SDG Book Club Logo">
@@ -46,7 +53,6 @@
                     <hr/>
                 </div>
             </div>
-
             <div class="resource-card" id="sdg-teachers-guide">
                 <img src="/images/sdg_teachers_guide.png" alt="Teachers Guide on the SDGs Logo">
                 <div class="resource-content">
@@ -56,7 +62,6 @@
                     <hr/>
                 </div>
             </div>
-
             <div class="resource-card" id="sdg-act-now">
                 <img src="/images/sdg_actnow.png" alt="Act Now Logo">
                 <div class="resource-content">
@@ -68,14 +73,44 @@
             </div>
         </section>
     </main>
-
     <div class="un-container">
         <img src="/images/un_logo.png" alt="United Nations Logo">
         <p id="un-text1">United<br>Nations</p>
         <p id="un-text2">Department of Economic and Social Affairs<br>Sustainable Development Goals</p>
     </div>
-
     <footer>
+        <div id="footer-container">
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Company</li>
+                    <li class="footer-list-item">About Us</li>
+                    <li class="footer-list-item">Get Involved</li>
+                    <li class="footer-list-item">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Community</li>
+                    <li class="footer-list-item">Resources</li>
+                    <li class="footer-list-item">Events</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">What We Do</li>
+                    <li class="footer-list-item">Challenges</li>
+                    <li class="footer-list-item">Solutions</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Social</li>
+                    <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
+                    <li class="footer-list-item">Instagram</li>
+                    <li class="footer-list-item">Twitter</li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
