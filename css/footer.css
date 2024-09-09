@@ -1,4 +1,11 @@
-/* Footer Desktop Style START */
+html *{
+    font-family: Inter !important
+}
+
+body{
+    margin:0;
+}
+
 footer{
     /* display: flex; */
     /* justify-content: center; */
