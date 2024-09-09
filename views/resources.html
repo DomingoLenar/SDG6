@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav class="navbar">
             <div class="navbar-container">
@@ -17,18 +18,18 @@
                 <label for="navbar-toggle" class="navbar-hamburger">☰</label>
                 <div class="navbar-center">
                     <div class="navbar-menu">
-                        <a href="" class="navbar-item">Home</a>
-                        <a href="" class="navbar-item">About</a>
+                        <a href="index.html" class="navbar-item">Home</a>
+                        <a href="about-us.html" class="navbar-item">About</a>
                         <a href="" class="navbar-item">Challenges</a>
-                        <a href="" class="navbar-item">Solutions</a>
-                        <a href="" class="navbar-item">Resources</a>
-                        <a href="" class="navbar-item">Get Involved</a>
-                        <a href="" class="navbar-item">Events</a>
+                        <a href="solutions.html" class="navbar-item">Solutions</a>
+                        <a href="resources.html" class="navbar-item">Resources</a>
+                        <a href="get-involved.html" class="navbar-item">Get Involved</a>
+                        <a href="events.html" class="navbar-item">Events</a>
                         <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
-                        <a href="" id="subscribe-hamburger"><button class="button-style-blue-m bold">Subscribe</button></a> 
+                        <button id="subscribe-hamburger" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
                     </div>
                 </div>
-                <a href="" id="subscribe"><button class="button-style-blue-m bold">Subscribe</button></a>
+                <button id="subscribe" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
             </div>
         </nav>
     </header>
@@ -44,42 +45,36 @@
         </section>
         <section class="resource-section">
             <div class="resource-card" id="sdg-book-club">
-                <div class="resource-image">
-                    <img src="/images/sdg_bookclub.png" alt="SDG Book Club Logo">
-                </div>
+                <img src="/images/sdg-bookclub-logo.png" alt="SDG Book Club Logo">
                 <div class="resource-content">
-                    <hr/>
+                    <hr>
                     <h3>SDG Book Club</h3>
                     <p>The SDG Book Club aims to use books as a tool to encourage children ages 6-12 to interact with the principles of the Sustainable Development Goals (SDGs) through a curated reading list of books from around the world related to each of the 17 SDGs in all six official UN languages—Arabic, Chinese, English, French, Russian, and Spanish. <a href="#">Find out more!</a></p>
-                    <hr/>
+                    <hr>
                 </div>
             </div>
             <div class="resource-card" id="sdg-teachers-guide">
-                <div class="resource-image">
-                    <img src="/images/sdg_teachers_guide.png" alt="Teachers Guide on the SDGs Logo">
-                </div>
+                <img src="/images/sdg-teachers-logo.png" alt="Teachers Guide on the SDGs Logo">
                 <div class="resource-content">
-                    <hr/>
+                    <hr>
                     <h3>Teachers Guide on the SDGs</h3>
                     <p>This teaching guide, aimed at grade level K-12,  gives an introduction and historical background to the SDGs. Key questions along with primary resources are provided to facilitate comprehension and engage students critically. Through analysis of the Preamble to the 2030 Agenda for Sustainable Development, the connection will be made to the Millenium Development Goals and Human Rights, to demonstrate continuity and evolution of certain principle values held by the international community. Focus then shifts to SDG 4, quality education, so  that students can ore clearly analyze the progress that has been made regarding this topic on a micro level.</p>
-                    <hr/>
+                    <hr>
                 </div>
             </div>
             <div class="resource-card" id="sdg-act-now">
-                <div class="resource-image">
-                    <img src="/images/sdg_actnow.png" alt="Act Now Logo">
-                </div>
+                <img src="/images/sdg-actnow-logo.png" alt="Act Now Logo">
                 <div class="resource-content">
-                    <hr/>
+                    <hr>
                     <h3>Act Now</h3>
                     <p>The ActNow campaign is the UN’s flagship campaign to inspire action for the Sustainable Development Goals. A gamified mobile app by AWorld continues to engage audiences worldwide. And the Climate Action Superheroes kids’ version of ActNow opened the campaign up to kids and their parents. The campaign provides entry points for individual action for a healthy planet as well as for a better economy, a just society and a world working together.</p>
-                    <hr/>
+                    <hr>
                 </div>
             </div>
         </section>
     </main>
     <div class="un-container">
-        <img src="/images/un_logo.png" alt="United Nations Logo">
+        <img src="/images/un-logo.png" alt="United Nations Logo">
         <p id="un-text1">United<br>Nations</p>
         <p id="un-text2">Department of Economic and Social Affairs<br>Sustainable Development Goals</p>
     </div>
@@ -88,31 +83,31 @@
             <div>
                 <ul class="footer-list">
                     <li class="footer-list-header">Company</li>
-                    <li class="footer-list-item"><a>About Us</a></li>
-                    <li class="footer-list-item"><a>Get Involved</a></li>
-                    <li class="footer-list-item"><a>Contact Us</a></li>
+                    <li class="footer-list-item">About Us</li>
+                    <li class="footer-list-item">Get Involved</li>
+                    <li class="footer-list-item">Contact Us</li>
                 </ul>
             </div>
             <div>
                 <ul class="footer-list">
                     <li class="footer-list-header">Community</li>
-                    <li class="footer-list-item"><a>Resources</a></li>
-                    <li class="footer-list-item"><a>Events</a></li>
+                    <li class="footer-list-item">Resources</li>
+                    <li class="footer-list-item">Events</li>
                 </ul>
             </div>
             <div>
                 <ul class="footer-list">
                     <li class="footer-list-header">What We Do</li>
-                    <li class="footer-list-item"><a>Challenges</a></li>
-                    <li class="footer-list-item"><a>Solutions</a></li>
+                    <li class="footer-list-item">Challenges</li>
+                    <li class="footer-list-item">Solutions</li>
                 </ul>
             </div>
             <div>
-                <ul class="footer-list flex">
+                <ul class="footer-list">
                     <li class="footer-list-header">Social</li>
                     <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
-                    <li class="footer-list-item"><a>Instagram</a></li>
-                    <li class="footer-list-item"><a>Twitter</a></li>
+                    <li class="footer-list-item">Instagram</li>
+                    <li class="footer-list-item">Twitter</li>
                 </ul>
             </div>
         </div>

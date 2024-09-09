@@ -13,15 +13,11 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .topic-section {
-    background-image: url('/images/conference.png'); 
+    background-image: url('/images/conference-photo.png'); 
     /* Placeholder for the background image */
     background-position: center;
     /* text-align: center; */
@@ -58,6 +54,7 @@ header {
     overflow: hidden;
     text-align: center;
     display: flex;
+    align-items: center;
 }
 
 .resource-image {
@@ -70,6 +67,7 @@ header {
 .resource-card img {
     width: 250px;
     height: 250px;
+    margin-left: 30px;
 }
 
 .resource-card#sdg-book-club {
@@ -117,14 +115,6 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
-
-footer {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
 .un-container {
     display: flex;
     justify-content: center;
@@ -178,6 +168,10 @@ hr {
         padding: 20px;
     }
 
+    .resource-card img {
+        margin: 0;
+    }
+
     .resource-content p {
         padding: 0;
     }
@@ -185,4 +179,9 @@ hr {
     .topic-section {
         display: none;
     }
+
+    .un-container {
+        padding: 5px;
+    }
+
 }

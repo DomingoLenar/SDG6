@@ -29,7 +29,7 @@ body {
     align-items: center;
 }
 
-.banner-content h1 {
+.banner-content p {
     color: #ffffff;
     font-weight: 700;
     font-size: 80px;
@@ -42,7 +42,7 @@ body {
     background-color: #ffffff;
 }
 
-.icons-section h1 {
+.icons-section p {
     color: #285663;
     font-size: 50px;
 }
@@ -83,7 +83,7 @@ body {
     padding: 20px;
 }
 
-.content-left h1 {
+.content-left p {
     color: #285663;
     font-family: Inter;
     font-size: 40px;
@@ -146,7 +146,7 @@ body {
     height: auto;
 }
 
-.donation-section h1 {
+.donation-section p {
     font-size: 40px;
     font-weight: 900;
     text-align: left;
@@ -170,7 +170,7 @@ body {
     padding: 20px;
 }
 
-.content-left h1 {
+.content-left p {
     color: #285663;
     font-family: Inter;
     font-size: 40px;
@@ -294,7 +294,7 @@ body {
     margin: 200px 0;
 }
 
-.email-form-container h1{
+.email-form-container p{
     font-size: 40px;
     font-weight: 900;
     text-align: center;
@@ -359,33 +359,6 @@ body {
 
     .content-section {
         flex-direction: column;
-    }
-
-    nav {
-        padding: 0;
-    }
-
-    .navbar {
-        padding: 0;
-    }
-
-
-    .events-section {
-      padding: 10px;
-    }
-  
-    .event-card {
-      margin-bottom: 15px;
-    }
-  
-    .event-image img {
-      width: 100%; /* Ensure full-width & full-height images */
-      height: 100%;
-    }
-  
-    .register-btn{
-      width: 100%;
-      margin-top: 10px;
     }
 
     .newsletter-image {
