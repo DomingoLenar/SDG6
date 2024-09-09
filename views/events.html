@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Events</title>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <nav class="navbar">
             <div class="navbar-container">
@@ -17,18 +20,20 @@
                 <label for="navbar-toggle" class="navbar-hamburger">☰</label>
                 <div class="navbar-center">
                     <div class="navbar-menu">
-                        <a href="" class="navbar-item">Home</a>
+                        <a href="/index.html" class="navbar-item">Home</a>
                         <a href="/views/about-us.html" class="navbar-item">About</a>
                         <a href="/views/challenges.html" class="navbar-item">Challenges</a>
-                        <a href="" class="navbar-item">Solutions</a>
-                        <a href="" class="navbar-item">Resources</a>
+                        <a href="/views/solutions.html" class="navbar-item">Solutions</a>
+                        <a href="/views/resources.html" class="navbar-item">Resources</a>
                         <a href="/views/get-involved.html" class="navbar-item">Get Involved</a>
-                        <a id="active-page" href="/views/events.html" class="navbar-item"><b>Events</b></a>
+                        <a href="/views/events.html" class="navbar-item">Events</a>
                         <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
-                        <a href="" id="subscribe-hamburger"><button class="button-style-blue-m bold">Subscribe</button></a>
+                        <button id="subscribe-hamburger" class="button-style-blue-m bold"
+                            onClick="window.location.href='news-letter.html'">Subscribe</button>
                     </div>
                 </div>
-                <a href="" id="subscribe"><button class="button-style-blue-m bold">Subscribe</button></a>
+                <button id="subscribe" class="button-style-blue-m bold"
+                    onClick="window.location.href='news-letter.html'">Subscribe</button>
             </div>
         </nav>
     </header>

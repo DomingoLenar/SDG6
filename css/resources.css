@@ -17,7 +17,7 @@ header {
 }
 
 .topic-section {
-    background-image: url('/images/conference.png'); 
+    background-image: url('/images/conference-photo.png');
     /* Placeholder for the background image */
     background-position: center;
     /* text-align: center; */
@@ -35,7 +35,7 @@ header {
     gap: 20px;
 }
 
-.topic-card > h1:last-child {
+.topic-card>h1:last-child {
     margin-left: auto;
     font-size: 100px;
     padding: 0 50px;
@@ -75,7 +75,7 @@ header {
 }
 
 .resource-card#sdg-teachers-guide {
-    background-color:#87BFD0;
+    background-color: #87BFD0;
 }
 
 .resource-card#sdg-act-now {
@@ -115,6 +115,7 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
+
 .un-container {
     display: flex;
     justify-content: center;
@@ -155,7 +156,7 @@ hr {
     padding: 50px 20px;
 }
 
-.topic-content img{
+.topic-content img {
     width: 10%;
     height: auto;
 }
