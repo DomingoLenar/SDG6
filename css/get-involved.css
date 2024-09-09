@@ -7,68 +7,14 @@ body, html {
     line-height: 1.6;
 }
 
-/* Navbar styles */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-nav img {
-    width: 10%;
-    height: auto;
-    margin-left: 5px;
-}
-
-nav div.nav-items {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav div.nav-items a {
-    text-decoration: none;
-    padding: 14px;
-    color: black;
-}
-
-nav div.nav-items a:hover {
-    background-color: #77d1e566;
-    border-radius: 10px;
-    color: black;
-
-}
-
-nav div.nav-items a:visited {
-    color: black;
-}
-
-#subscribe {
-    padding: 14px;
-}
-
-#subscribe button {
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #4495ad;
-    color: white;
-    font-weight: bold;
-}
-
-#subscribe button:hover {
-    background-color: #87bfd0;
-}   
-
 /* Main content styles */
 .main-banner {
-    background-color: #4AA3BA;
-    color: white;
-    padding: 2rem;
+    margin: 0%;
+    background-image: url('/images/contact-us-banner.png');
+    background-size:contain;
+    font-size: 100px;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+    color: white;
 }
 
 .content {
@@ -92,9 +38,9 @@ nav div.nav-items a:visited {
 }
 
 .connect-image {
-    width: 700px;
-    height: 382px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
     border-radius: 8px;
 }
 
@@ -205,12 +151,6 @@ nav div.nav-items a:visited {
     border-radius: 30px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {

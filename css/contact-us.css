@@ -1,5 +1,7 @@
 html * {
     font-family: Inter !important;
+    margin: 0%;
+    padding: 0%;
 }
 
 body,
@@ -23,100 +25,6 @@ body {
 }
 
 /* Header and navigation styling */
-header {
-    background-color: #ffffff;
-    padding: 1rem 0;
-}
-
-.navbar {
-    background-color: white;
-    padding: 10px 20px;
-}
-
-.navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-logo {
-    width: 10%;
-    height: auto;
-    margin-left: 5px;
-}
-
-.navbar-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-.navbar-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-item {
-    text-decoration: none;
-    padding: 14px;
-    color: black;
-}
-
-.navbar-item:hover {
-    background-color: #77d1e566;
-    border-radius: 10px;
-    color: black;
-}
-
-.navbar-item:visited {
-    color: black;
-}
-
-.navbar-item#active-page {
-    background-color: #90e2f5;
-    border-radius: 10px;
-}
-
-#subscribe {
-    padding: 14px;
-}
-
-#subscribe-hamburger {
-    display: none;
-}
-
-
-.navbar-hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-#navbar-toggle {
-    display: none;
-}
-
-/* Reusable CSS: */
-
-.button-style-blue-m {
-    border-radius: 10px;
-    border: 0px;
-    background-color: #4495ad;
-    color: white;
-    padding: 10px;
-}
-
-.button-style-blue-m:hover {
-    background-color: #87bfd0;
-}
-
-#subscribe button:hover {
-    background-color: #87bfd0;
-}
 
 .button-style-blue-m:active {
     background-color: #ade9fb;
@@ -277,18 +185,17 @@ label {
 
 #contact-form p {
     margin-bottom: 8%;
-    font-size: 2vw;
 }
 
 @media screen and (max-width: 768px) {
     .contact-options {
         display: block;
-        padding: 20%;
     }
 
     .contact-option {
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
+
     }
 }
 
@@ -371,37 +278,3 @@ button:hover {
     background-color: #3a8ca4;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #285663;
-}
-
-footer div {
-    padding: 3%;
-}
-
-.flex {
-    display: flexbox;
-}
-
-footer div ul.footer-list {
-    list-style-type: none;
-    justify-content: center;
-}
-
-footer div ul.footer-list li.footer-list-header {
-    color: white;
-    font-weight: bolder;
-    font-size: 140%;
-    text-decoration: underline;
-    text-decoration-color: #77D0E5;
-
-}
-
-footer div ul.footer-list li.footer-list-item {
-    color: white;
-    font-weight: lighter;
-    margin-top: 20px;
-}

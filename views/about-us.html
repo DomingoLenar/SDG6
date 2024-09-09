@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="/css/about-us.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 
 <body>
@@ -17,18 +19,18 @@
                 <label for="navbar-toggle" class="navbar-hamburger">☰</label>
                 <div class="navbar-center">
                     <div class="navbar-menu">
-                        <a href="" class="navbar-item">Home</a>
-                        <a id="active-page" href="/views/about-us.html" class="navbar-item"><b>About</b></a>
-                        <a href="/views/challenges.html" class="navbar-item">Challenges</a>
-                        <a href="" class="navbar-item">Solutions</a>
-                        <a href="" class="navbar-item">Resources</a>
-                        <a href="/views/get-involved.html" class="navbar-item">Get Involved</a>
-                        <a href="/views/events.html" class="navbar-item">Events</a>
+                        <a href="index.html" class="navbar-item">Home</a>
+                        <a href="about-us.html" class="navbar-item">About</a>
+                        <a href="" class="navbar-item">Challenges</a>
+                        <a href="solutions.html" class="navbar-item">Solutions</a>
+                        <a href="resources.html" class="navbar-item">Resources</a>
+                        <a href="get-involved.html" class="navbar-item">Get Involved</a>
+                        <a href="events.html" class="navbar-item">Events</a>
                         <a href="/views/contact-us.html" class="navbar-item">Contact Us</a>
-                        <a href="" id="subscribe-hamburger"><button class="button-style-blue-m bold">Subscribe</button></a>
+                        <button id="subscribe-hamburger" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
                     </div>
                 </div>
-                <a href="" id="subscribe"><button class="button-style-blue-m bold">Subscribe</button></a>
+                <button id="subscribe" class="button-style-blue-m bold" onClick="window.location.href='news-letter.html'">Subscribe</button>
             </div>
         </nav>
     </header>
@@ -213,35 +215,37 @@
     </main>
 
     <footer>
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">Company</li>
-                <li class="footer-list-item"><a>About Us</a></li>
-                <li class="footer-list-item"><a>Get Involved</a></li>
-                <li class="footer-list-item"><a>Contact Us</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">Community</li>
-                <li class="footer-list-item"><a>Resources</a></li>
-                <li class="footer-list-item"><a>Events</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list">
-                <li class="footer-list-header">What We Do</li>
-                <li class="footer-list-item"><a>Challenges</a></li>
-                <li class="footer-list-item"><a>Solutions</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list flex">
-                <li class="footer-list-header">Social</li>
-                <li class="footer-list-item"><a href="https://www.facebook.com/profile.php?id=61564988406354">Facebook</a></li>
-                <li class="footer-list-item"><a>Instagram</a></li>
-                <li class="footer-list-item"><a>Twitter</a></li>
-            </ul>
+        <div id="footer-container">
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Company</li>
+                    <li class="footer-list-item">About Us</li>
+                    <li class="footer-list-item">Get Involved</li>
+                    <li class="footer-list-item">Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Community</li>
+                    <li class="footer-list-item">Resources</li>
+                    <li class="footer-list-item">Events</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">What We Do</li>
+                    <li class="footer-list-item">Challenges</li>
+                    <li class="footer-list-item">Solutions</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list-header">Social</li>
+                    <li class="footer-list-item"><a href="/views/resources.html">Facebook</a></li>
+                    <li class="footer-list-item">Instagram</li>
+                    <li class="footer-list-item">Twitter</li>
+                </ul>
+            </div>
         </div>
     </footer>
 

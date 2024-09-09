@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topic-section {
+    background-image: url('/images/conference.png'); 
+    /* Placeholder for the background image */
+    background-position: center;
+    /* text-align: center; */
+    color: #ffffff;
+    height: 600px;
+}
+
+.topic-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.topic-card {
+    display: flex;
+    gap: 20px;
+}
+
+.topic-card > h1:last-child {
+    margin-left: auto;
+    font-size: 100px;
+    padding: 0 50px;
+}
+
+.resource-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resource-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.resource-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.resource-card img {
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+}
+
+.resource-card#sdg-book-club {
+    background-color: #FFFFFF;
+}
+
+.resource-card#sdg-teachers-guide {
+    background-color:#87BFD0;
+}
+
+.resource-card#sdg-act-now {
+    background-color: #4494AD;
+}
+
+.resource-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    /* Todo: import font-family: Inter; */
+}
+
+.resource-content h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #000000;
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
+}
+
+.resource-content p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    padding: 0 100px;
+    color: #000000;
+}
+
+.resource-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.un-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.un-container img {
+    width: 100px;
+}
+
+#un-text1 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000000;
+    border-right: 5px solid #87BFD0;
+    padding-right: 10px;
+}
+
+#un-text2 {
+    font-size: 0.8rem;
+    color: #4494AD;
+}
+
+hr {
+    border: none;
+    color: #285663;
+    height: 10px;
+    background-color: #285663;
+    width: 80%;
+    box-shadow: 4px 4px 4px #00000080;
+}
+
+.topic-content {
+    display: flex;
+    gap: 10px;
+    padding: 50px 20px;
+}
+
+.topic-content img{
+    width: 10%;
+    height: auto;
+}
+
+
+/* Styles for small screens (phones) */
+@media only screen and (max-width: 767px) {
+    .resource-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .resource-card img {
+        margin: 0;
+    }
+
+    .resource-content p {
+        padding: 0;
+    }
+
+    .topic-section {
+        display: none;
+    }
+
+    .un-container {
+        padding: 5px;
+    }
+
+}

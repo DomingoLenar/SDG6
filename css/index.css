@@ -1,0 +1,393 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main Banner Section */
+.main-banner {
+    background-image: url("/images/children-photo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+}
+
+.banner-content {
+    display: flex;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner-content h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+/* Icons Section */
+.icons-section {
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #ffffff;
+}
+
+.icons-section h1 {
+    color: #285663;
+    font-size: 50px;
+}
+
+.icons-section .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon img {
+    height: 300px;
+    width: 250px;
+}
+
+.icon p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon hr {
+    border: none;
+    color: #285663;
+    background-color: #285663;
+    width: 20px;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #cce0e6;
+}
+
+.content-left, .content-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-left h1 {
+    color: #285663;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.content-right button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: #4494AD;
+    border-radius: 20px;
+}
+
+/* Quotes Section */
+.quotes-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.quote {
+    flex: 1;
+    padding: 20px;
+    background: #87BFD0;
+}
+
+.quote p {
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60.51px;
+    text-align: right;
+    color: #285663;
+}
+
+.quote-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Donation Section */
+.donation-section {
+    background: #87BFD0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-section img {
+    width: 50%;
+    height: auto;
+}
+
+.donation-section h1 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    color: #285663;
+}
+
+.donation-section .social-icons {
+    margin-top: 20px;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #cce0e6;
+}
+
+.content-left, .content-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-left h1 {
+    color: #285663;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.content-right button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: #4494AD;
+    border-radius: 20px;
+}
+
+/* Quotes Section */
+.quotes-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.quote {
+    flex: 1;
+    padding: 20px;
+    background: #87BFD0;
+}
+
+.quote p {
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60.51px;
+    text-align: right;
+    color: #285663;
+}
+
+.quote-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Donation Section */
+.donation-section {
+    background: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.donation-container {
+    display: flex;
+    background: #87BFD0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    text-align: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donation-image {
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Payment options container */
+.payment-options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; /* Spacing between the cards */
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #87BFD0; /* Light blue background */
+}
+
+/* Payment card style */
+.payment-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.payment-card:hover {
+    background-color: #77d1e566;
+    cursor: pointer;
+}
+
+/* Image inside payment card */
+.payment-card img {
+    max-width: 80%; /* Adjust image size */
+    height: auto;
+}
+
+.newsletter {
+    display: flex;
+    background-color: rgb(236, 239, 243);
+}
+
+.newsletter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.email-form-container {
+    margin: 200px 0;
+}
+
+.email-form-container h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: #285663;
+}
+
+#submit-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+#email {
+    width: 18em;
+    height: 2.75em;
+    border-radius: 6px;
+    padding: 0 1em;
+    background-color: rgb(236, 239, 243);
+}
+
+#submit {
+    background-color: #87BFD0;
+    margin: 0 0 0 20px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #000000;
+}
+
+@media only screen and (max-width: 1080px){
+    .donation-container {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .donation-image {
+        display: none;
+    }
+}
+
+/* Styles for small screens (phones) */
+@media only screen and (max-width: 767px) {
+    .main-banner {
+        display: none;
+    }
+
+    .icons-section {
+        padding: 0;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .quotes-section {
+        display: none;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .newsletter-image {
+        display: none;
+    }
+  }
+
+@media only screen and (max-width: 618px) {
+    .events-section {
+      padding: 10px;
+    }
+  
+    .event-card {
+        display: flex;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+  
+    .event-image img {
+      width: 100%; 
+      height: 100%;
+    }
+  
+    .register-btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .newsletter-image {
+        display: none;
+    }
+  }
