@@ -93,28 +93,32 @@ body {
 
 /* Solution Start Part */
 .solution-start {
-    max-width: 70%;
+    max-width: 80%;
+    padding: 2vw;
 }
 
 #solutions-start-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    min-height: 60vh;
     text-align: center;
-    padding: 0%;
+    padding: 4vw 0;
 }
 
 #solution-start-main {
-    font-size: var(--main-font-size); 
+    font-size: calc(1.5rem + 1.5vw);
     font-weight: bold;
     color: var(--secondary-color); 
-    margin-bottom: 1rem;
+    margin-bottom: 2vw;
+    line-height: 1.2;
 }
 
 #solution-start-body {
-    font-size: var(--sub-font-size);
+    font-size: calc(0.8rem + 0.8vw);
     color: var(--primary-color);
+    line-height: 1.6;
+    margin-bottom: 3vw;
 }
 
 #solution-cwu-button {
@@ -122,10 +126,10 @@ body {
     color: white;
     border: none;
     border-radius: var(--button-radius);
-    padding: var(--button-padding);
-    font-size: var(--button-font-size);
+    padding: calc(0.5rem + 0.5vw) calc(1rem + 1vw);
+    font-size: calc(0.8rem + 0.4vw);
     cursor: pointer;
-    margin-top: 40px;
+    transition: background-color 0.3s ease;
 }
 
 #solution-cwu-button:hover {
@@ -172,7 +176,7 @@ body {
     width: 100%;
     height: 100%;
     max-width: 400px;
-    max-height: 600px;
+    max-height: 1000px;
     background-color: var(--card-background-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -301,17 +305,27 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .solution-start {
+        max-width: 100%;
+        padding: 4vw;
+    }
+
+    #solutions-start-text {
+        min-height: auto;
+        padding: 6vw 0;
+    }
+
     #solution-start-main {
-        font-size: calc(var(--main-font-size) * 1);
+        font-size: calc(1rem + 1.5vw);
     }
 
     #solution-start-body {
-        font-size: var(--sub-font-size);
+        font-size: calc(0.6rem + 0.8vw);
     }
 
     #solution-cwu-button {
-        font-size: var(--small-font-size);
-        padding: 10px 16px;
+        padding: calc(0.4rem + 0.5vw) calc(0.8rem + 1vw);
+        font-size: calc(0.7rem + 0.4vw);
     }
 }
