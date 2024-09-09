@@ -1,0 +1,192 @@
+/* get-involved-styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main content styles */
+.main-banner {
+    margin: 0%;
+    background-image: url('/images/contact-us-banner.png');
+    background-size:contain;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.connect-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.connect-text {
+    font-size: 5rem;
+    color: #4AA3BA;
+    margin-bottom: 1rem;
+}
+
+.connect-image {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    border-radius: 8px;
+}
+
+.sdg-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.donate-button {
+    background-color: #D9D9D9;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    padding: 0.75rem 1.5rem;
+    align-items: end;    
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.subscribe-button {
+    background-color: #87BFD0;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.donate-button:hover {
+    background-color: #3a8296;
+}
+.subscribe-button:hover {
+    background-color: #D9D9D9;
+}
+
+.benefits {
+    margin-bottom: 4rem;
+}
+
+.benefits-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.benefit-card {
+    background-color: #87BFD0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.benefit-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f7f7f7;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.payment-methods img {
+    align-items: end;
+    height: 30px;
+}
+
+.partnership-campaigns {
+    margin-bottom: 3rem;
+}
+
+.partnership-campaigns h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.campaign {
+    background-color: #4494AD;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.campaign img {
+    width: 268px;
+    height: 245px;
+    margin-right: 1.5rem;
+    border-radius: 30px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #subscribe {
+        margin-top: 1rem;
+    }
+
+    .connect-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .connect-image {
+        margin-top: 1.5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campaign {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .campaign img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
