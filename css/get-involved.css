@@ -1,0 +1,282 @@
+/* get-involved-styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav img {
+    width: 10%;
+    height: auto;
+    margin-left: 5px;
+}
+
+nav div.nav-items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav div.nav-items a {
+    text-decoration: none;
+    padding: 14px;
+    color: black;
+}
+
+nav div.nav-items a:hover {
+    background-color: #77d1e566;
+    border-radius: 10px;
+    color: black;
+
+}
+
+nav div.nav-items a:visited {
+    color: black;
+}
+
+#subscribe {
+    padding: 14px;
+}
+
+#subscribe button {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4495ad;
+    color: white;
+    font-weight: bold;
+}
+
+#subscribe button:hover {
+    background-color: #87bfd0;
+}   
+
+/* Main content styles */
+.main-banner {
+    margin: 0%;
+    background-image: url('/images/contact-us-banner.png');
+    background-size:contain;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.connect-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.connect-text {
+    font: weight 3000px;
+    font-size: 5rem;
+    color: #4AA3BA;
+    margin-bottom: 1rem;
+}
+
+.connect-image {
+    width: 700px;
+    height: 382px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sdg-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.donate-button {
+    background-color: #D9D9D9;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    padding: 0.75rem 1.5rem;
+    align-items: end;    
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.subscribe-button {
+    background-color: #87BFD0;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.donate-button:hover {
+    background-color: #3a8296;
+}
+.subscribe-button:hover {
+    background-color: #D9D9D9;
+}
+
+.benefits {
+    margin-bottom: 4rem;
+}
+
+.benefits-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.benefit-card {
+    background-color: #87BFD0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.benefit-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f7f7f7;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.payment-methods img {
+    align-items: right;
+    height: 30px;
+}
+
+.partnership-campaigns {
+    margin-bottom: 3rem;
+}
+
+.partnership-campaigns h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.campaign {
+    background-color: #4494AD;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: right;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.campaign img {
+    width: 268px;
+    height: 245px;
+    margin-right: 1.5rem;
+    border-radius: 30px;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #285663;
+}
+
+footer div {
+    padding: 3%;
+}
+
+.flex {
+    display: flexbox;
+}
+
+footer div ul.footer-list {
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer div ul.footer-list li.footer-list-header {
+    color: white;
+    font-weight: bolder;
+    font-size: 140%;
+    text-decoration: underline;
+    text-decoration-color: #77D0E5;
+
+}
+
+footer div ul.footer-list li.footer-list-item {
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #subscribe {
+        margin-top: 1rem;
+    }
+
+    .connect-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .connect-image {
+        margin-top: 1.5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campaign {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .campaign img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
