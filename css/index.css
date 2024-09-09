@@ -10,31 +10,13 @@ body {
     line-height: 1.6;
 }
 
-/* Header Navigation */
-header {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Default component properties */
+.btn {
+    background-color: rgb(44, 186, 223);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li.logo img {
-    height: 40px;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.btn:hover {
+    background-color: #22c7f2;
 }
 
 /* Main Banner Section */
@@ -107,17 +89,12 @@ nav ul li a {
 
 .register-btn {
     padding: 10px 20px;
-    background-color: #87BFD0;
     color: #000000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
     font-size: 14px;
-}
-
-.register-btn:hover {
-    background-color: #77d1e566;
 }
 
 /* Event Image Styles */
@@ -194,7 +171,7 @@ nav ul li a {
 
 /* Donation Section */
 .donation-section {
-    background: #87BFD0;
+    background: rgb(44, 186, 223);
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -251,12 +228,6 @@ nav ul li a {
     border-radius: 0 4px 4px 0;
 }
 
-.toggle-btn.active {
-    background-color: #87BFD0;
-    color: #000000;
-    border-color: #87BFD0;
-}
-
 .donation-options h2 {
     font-size: 16px;
     margin-bottom: 15px;
@@ -272,7 +243,7 @@ nav ul li a {
 .amount-btn {
     padding: 10px;
     margin: 5px;
-    border: 1px solid rgb(236, 239, 243);
+    border: 1px solid #000000;
     background: rgb(236, 239, 243);
     cursor: pointer;
     font-size: 14px;
@@ -280,23 +251,16 @@ nav ul li a {
     flex: 1 1 40%;
 }
 
-.amount-btn.active {
-    background-color: #87BFD0;
-    border-color: #87BFD0;
-    color: #333;
-}
-
 .amount-input {
     flex: 1 1 80%;
     padding: 10px;
     margin: 5px;
-    border: 1px solid rgb(236, 239, 243);
+    border: 1px solid #000000;
     border-radius: 4px;
     background: rgb(236, 239, 243);
 }
 
 .join-btn {
-    background-color: #87BFD0;
     border: none;
     color: #000000;
     font-weight: bold;
@@ -357,9 +321,8 @@ nav ul li a {
     text-align: center;
     border: none;
     cursor: pointer;
-    background: #4494AD4D;
     border-radius: 10px;
-    color: #00000040;
+    color: #000000;
 }
 
 @media only screen and (max-width: 1080px){
@@ -387,7 +350,7 @@ nav ul li a {
       height: 100%;
     }
   
-    .register-btn {
+    .register-btn{
       width: 100%;
       margin-top: 10px;
     }
@@ -422,3 +385,51 @@ nav ul li a {
         display: none;
     }
   }
+
+/* Waterfall animation styling */
+#waterfall-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.waterfall {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00b7ff, #006bff);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.5);
+    bottom: -80%;
+    left: -50%;
+    animation: wave 5s infinite ease-in-out;
+    border-radius: 40%;
+}
+
+.wave:nth-child(2) {
+    animation-delay: -2.5s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+}
+
+.active {
+    background-color: rgb(44, 186, 223);
+}
