@@ -5,6 +5,7 @@ html * {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* Navbar Desktop Style Start  */
@@ -38,6 +39,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .navbar-item {
@@ -60,10 +62,9 @@ body {
     padding: 14px;
 }
 
-#subscribe-hamburger{
+#subscribe-hamburger {
     display: none;
 }
-
 
 .navbar-hamburger {
     display: none;
@@ -71,158 +72,185 @@ body {
     font-size: 1.5rem;
 }
 
-/* This is important */
 #navbar-toggle {
     display: none;
 } 
 
-/* Navbar Desktop Style END */
-
-
 /* Footer Desktop Style START */
-footer{
-    /* display: flex; */
-    /* justify-content: center; */
+footer {
     background-color: #285663;
 }
 
-footer div{
+footer div {
     padding: 3%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.justify-center{
-    justify-content:center;
-}
-
-footer div ul.footer-list{
-    list-style-type: none;
+.justify-center {
     justify-content: center;
 }
 
-footer div ul.footer-list li.footer-list-header{
+footer div ul.footer-list {
+    list-style-type: none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+footer div ul.footer-list li.footer-list-header {
     color: white;
     font-weight: bolder;
     font-size: 140%;
     text-decoration: underline;
     text-decoration-color: #77D0E5;
-
 }
 
-footer div ul.footer-list li.footer-list-item{
-    color:white;
+footer div ul.footer-list li.footer-list-item {
+    color: white;
     font-weight: lighter;
     margin-top: 20px;
 }
 
-.footer-list-item > a{
+.footer-list-item > a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-
-/* add css for footer-container here */
-
-#footer-container{
+#footer-container {
     display: flex;
     justify-content: center;
     padding: 0;
 }
-/* Footer Desktop Style END */
 
 /* News-letter Style Start */
-
-#newsletter-header{
-    padding:20px;
+#newsletter-header {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
 }
 
-#subscribe-tagline{
-    font-size: 450%;
+#subscribe-tagline {
+    font-size: 4.5rem;
+    margin: 20px 0;
 }
 
-/* News-letter Style END */
+.newsletter-content {
+    max-width: 600px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
 /* Reusable CSS: */
-
-.text-white{
-    color:white !important;
+.text-white {
+    color: white !important;
 }
 
-.text-primary-dark{
-    color:#285663;
+.text-primary-dark {
+    color: #285663;
 }
 
-.text-center{
-    text-align:center;
+.text-center {
+    text-align: center;
 }
 
-.big-text{
-    font-size: 300%;
+.big-text {
+    font-size: 3rem;
 }
 
-.button-style-blue-m{
+.button-style-blue-m {
     border-radius: 10px;
     border: 0px;
-    background-color:#4495ad;
-    color:white;
-    padding: 10px;
+    background-color: #4495ad;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.button-style-blue-m:hover{
-    background-color:#87bfd0;
+.button-style-blue-m:hover {
+    background-color: #87bfd0;
 }
 
-.button-style-blue-m:active{
+.button-style-blue-m:active {
     background-color: #ade9fb;
 }
 
-.bold{
+.button-style-blue-l {
+    border-radius: 10px;
+    border: 0;
+    background-color: #4495ad;
+    padding: 10px;
+}
+
+.button-style-blue-l:hover {
+    background-color: #87bfd0; 
+}
+
+.button-style-blue-l:active {
+    background-color: #ade9fb;
+}
+
+.bold {
     font-weight: bold;
 }
 
-.bolder{
+.bolder {
     font-weight: bolder;
 }
 
-.background-wave{
+.background-wave {
     background-image: url("/images/wave.png");
-    background-size: 100%;
-    background-repeat: repeat-x;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-
-.container > h1{
-    margin:0
+.container > h1 {
+    margin: 0;
 }
 
-
-.margin-5per{
-    margin:5%;
+.margin-5per {
+    margin: 5%;
 }
 
-.margin-left-10per{
-    margin-left:10%;
+.margin-left-10per {
+    margin-left: 10%;
 }
 
-img.img-40per{
+img.img-40per {
     width: 40%;
     height: auto;
+    max-width: 300px;
 }
 
-.rounded-blue-m{
+.rounded-blue-m {
     border-radius: 20px;
-    background-color:#77D0E5;
+    background-color: #77D0E5;
     border: 0;
     padding: 20px;
     width: 80%;
-    
+    max-width: 400px;
 }
 
 @media only screen and (max-width: 768px) {
-
     /* Navbar Mobile Style START */
     .navbar-container {
         flex-wrap: wrap;
@@ -241,16 +269,16 @@ img.img-40per{
     .navbar-center {
         order: 3;
         flex-basis: 100%;
+        display: none;
     }
 
     .navbar-menu {
-        display: none;
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
     }
 
-    #navbar-toggle:checked ~ .navbar-center .navbar-menu {
+    #navbar-toggle:checked ~ .navbar-center {
         display: flex;
     }
 
@@ -263,15 +291,71 @@ img.img-40per{
         display: none;
     }
 
-    #subscribe-hamburger{
-        display:inline
+    #subscribe-hamburger {
+        display: inline;
     }
 
-    /* Navbar Mobile Style END */
-
-    /* Footer Mobile Style START */
-    #footer-container{
-        flex-wrap: wrap;
+    /* Footer Mobile Style */
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
     }
-    /* Footer Mobile Style END */
+
+    #footer-container > div {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Newsletter Style */
+    #newsletter-header {
+        padding: 10px;
+    }
+
+    #subscribe-tagline {
+        font-size: 2.5rem;
+        margin: 15px 0;
+    }
+
+    .newsletter-content {
+        max-width: 100%;
+    }
+
+    .email-input {
+        max-width: 250px;
+    }
+
+    .big-text {
+        font-size: 2rem;
+    }
+
+    /* General Mobile Styles */
+    .margin-left-10per {
+        margin-left: 0;
+    }
+
+    .margin-5per {
+        margin: 20px 10px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img.img-40per {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .rounded-blue-m {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .button-style-blue-m {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }
